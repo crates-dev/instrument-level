@@ -1,0 +1,50 @@
+[package]
+name = "instrument-level"
+version = "10.14.11"
+readme = "README.md"
+edition = "2024"
+authors = ["root@ltpp.vip"]
+license = "MIT"
+description = """"""
+keywords = ["http", "request", "response", "tcp", "cross-platform"]
+repository = "https://github.com/crates-dev/instrument-level.git"
+categories = ["network-programming", "web-programming"]
+exclude = [
+    "target",
+    "Cargo.lock",
+    "sh",
+    ".github",
+    "logs",
+    "img",
+    "**/*.log",
+    "debug",
+]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1.0.43"
+proc-macro2 = "1.0.105"
+syn = { version = "2.0.114", features = ["full"] }
+
+[dev-dependencies]
+tracing = "0.1.44"
+
+[profile.dev]
+incremental = false
+opt-level = 3
+lto = true
+panic = "unwind"
+debug = false
+codegen-units = 1
+strip = "debuginfo"
+
+[profile.release]
+incremental = false
+opt-level = 3
+lto = true
+panic = "unwind"
+debug = false
+codegen-units = 1
+strip = "debuginfo"
