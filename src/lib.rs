@@ -35,11 +35,6 @@ pub(crate) use syn::*;
 /// async fn test(x: i32, y: i32) -> i32 {
 ///     x + y
 /// }
-///
-/// #[instrument_trace(skip_all)]
-/// async fn test_skip_all(x: i32, y: i32) -> i32 {
-///     x + y
-/// }
 /// ```
 #[proc_macro_attribute]
 pub fn instrument_trace(attr: TokenStream, item: TokenStream) -> TokenStream {
