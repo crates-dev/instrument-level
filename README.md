@@ -28,27 +28,15 @@ cargo add instrument-level
 
 This crate provides five attribute macros for different tracing log levels:
 
-**`#[instrument_trace]` - Trace Level Instrumentation**
+- `#[instrument_trace]`- Trace Level Instrumentation - Use this macro to add trace-level logging instrumentation to functions. This is the most verbose log level and automatically excludes all function arguments from span fields using `skip_all`.
 
-Use this macro to add trace-level logging instrumentation to functions. This is the most verbose log level and automatically excludes all function arguments from span fields using `skip_all`.
+- `#[instrument_debug]` - Debug Level Instrumentation - Use this macro to add debug-level logging instrumentation to functions. Ideal for development and debugging purposes.
 
-**`#[instrument_debug]` - Debug Level Instrumentation**
+- `#[instrument_info]` - Info Level Instrumentation - Use this macro to add info-level logging instrumentation to functions. Suitable for general informational messages.
 
-Use this macro to add debug-level logging instrumentation to functions. Ideal for development and debugging purposes.
+- `#[instrument_warn]` - Warning Level Instrumentation - Use this macro to add warning-level logging instrumentation to functions. Use for potentially harmful situations.
 
-**`#[instrument_info]` - Info Level Instrumentation**
-
-Use this macro to add info-level logging instrumentation to functions. Suitable for general informational messages.
-
-**`#[instrument_warn]` - Warning Level Instrumentation**
-
-Use this macro to add warning-level logging instrumentation to functions. Use for potentially harmful situations.
-
-**`#[instrument_error]` - Error Level Instrumentation**
-
-Use this macro to add error-level logging instrumentation to functions. Use for error conditions that don't necessarily stop program execution.
-
-Each macro accepts optional tracing parameters such as `target`, `name`, `skip`, `fields`, etc., which can be used to customize the span behavior according to your needs.
+- `#[instrument_error]`- Error Level Instrumentation -Use this macro to add error-level logging instrumentation to functions. Use for error conditions that don't necessarily stop program execution. Each macro accepts optional tracing parameters such as`target`, `name`, `skip`, `fields`, etc., which can be used to customize the span behavior according to your needs.
 
 ## License
 
