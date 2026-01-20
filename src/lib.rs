@@ -2,14 +2,13 @@
 //! for different log levels (trace, debug, info, warn, error). This crate simplifies
 //! the process of adding tracing spans to functions with pre-configured log levels.
 
-mod instrument;
+mod r#fn;
 
-pub(crate) use instrument::*;
+pub(crate) use r#fn::*;
 
-pub(crate) use proc_macro::TokenStream;
-pub(crate) use proc_macro2::TokenStream as TokenStream2;
-pub(crate) use quote::quote;
-pub(crate) use syn::*;
+pub(crate) use {
+    proc_macro::TokenStream, proc_macro2::TokenStream as TokenStream2, quote::quote, syn::*,
+};
 
 /// Enables trace-level instrumentation for the decorated function.
 ///
