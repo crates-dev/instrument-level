@@ -4,11 +4,9 @@
 
 mod r#fn;
 
-pub(crate) use r#fn::*;
+use r#fn::*;
 
-pub(crate) use {
-    proc_macro::TokenStream, proc_macro2::TokenStream as TokenStream2, quote::quote, syn::*,
-};
+use {proc_macro::TokenStream, proc_macro2::TokenStream as TokenStream2, quote::quote, syn::*};
 
 /// Enables trace-level instrumentation for the decorated function.
 ///
