@@ -12,7 +12,7 @@
 
 [Official Documentation](https://docs.ltpp.vip/instrument-level/)
 
-[Api Docs](https://docs.rs/instrument-level/latest/instrument_level/)
+[Api Docs](https://docs.rs/instrument-level/latest/)
 
 > A Rust procedural macro collection providing convenient tracing instrumentation macros for different log levels (trace, debug, info, warn, error). This crate simplifies the process of adding tracing spans to functions with pre-configured log levels.
 
