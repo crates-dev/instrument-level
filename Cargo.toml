@@ -1,6 +1,6 @@
 [package]
 name = "instrument-level"
-version = "1.0.14"
+version = "1.0.15"
 readme = "README.md"
 edition = "2024"
 authors = ["root@ltpp.vip"]
@@ -24,9 +24,9 @@ exclude = [
 proc-macro = true
 
 [dependencies]
-quote = "1.0.45"
+quote = "1.0.46"
 proc-macro2 = "1.0.106"
-syn = { version = "2.0.117", features = ["full"] }
+syn = { version = "2.0.118", features = ["full"] }
 
 [dev-dependencies]
 tracing = "0.1.44"
