@@ -1,6 +1,6 @@
 [package]
 name = "instrument-level"
-version = "1.0.17"
+version = "1.0.18"
 readme = "README.md"
 edition = "2024"
 authors = ["root@ltpp.vip"]

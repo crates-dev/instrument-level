@@ -1,4 +1,4 @@
-use crate::*;
+use super::*;
 
 /// Macro for adding trace-level instrumentation to functions.
 ///
