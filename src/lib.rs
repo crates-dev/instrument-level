@@ -6,7 +6,7 @@ mod r#fn;
 
 use r#fn::*;
 
-use {proc_macro::TokenStream, proc_macro2::TokenStream as TokenStream2, quote::quote, syn::*};
+use {proc_macro::TokenStream, quote::quote, syn::*};
 
 /// Enables trace-level instrumentation for the decorated function.
 ///
